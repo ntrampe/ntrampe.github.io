@@ -45,6 +45,7 @@ body {
     #ddesc {
       grid-column: span 12;
       padding-top: 20px;
+      padding-left: 0px;
       text-align: center;
     }
 }
