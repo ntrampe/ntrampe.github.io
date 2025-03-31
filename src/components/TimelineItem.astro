@@ -19,32 +19,38 @@ const { experience } = Astro.props;
     >
     </div>
     <div
-      class="absolute w-4 h-4 bg-white border-2 border-emerald-500 rounded-full top-1/2 -translate-y-1/2"
+      class="absolute w-4 h-4 bg-white border-2 border-emerald-500 rounded-full top-1/2 -translate-y-1/2 z-10"
     >
     </div>
   </div>
 
   <!-- Content -->
-  <div class="flex-1 py-6">
-    <div class="flex flex-col md:flex-row items-center gap-6">
-      <!-- Icon and period -->
-      <div
-        class="flex flex-col items-center gap-4 mb-2 w-64 md:w-32 md:flex-shrink-0"
-      >
-        <img
-          src={experience.icon}
-          alt=""
-          class="w-20 rounded-md object-contain"
-        />
-        <time
-          class="text-xs font-light uppercase p-2 text-emerald-600 bg-emerald-100 rounded-full"
-        >
-          {experience.period}
-        </time>
-      </div>
+  <div class="flex-1 py-6 relative">
+    <!-- Horizontal connector line -->
+    <div class="absolute w-4 h-px bg-gray-300 left-[-16px] top-1/2"></div>
 
-      <!-- Description -->
-      <MarkdownContent content={experience.description} />
+    <!-- Content card with shadow and border -->
+    <div class="bg-white rounded-lg border border-gray-300 p-6">
+      <div class="flex flex-col md:flex-row items-center gap-6">
+        <!-- Icon and period -->
+        <div
+          class="flex flex-col items-center gap-4 mb-2 w-64 md:w-32 md:flex-shrink-0"
+        >
+          <img
+            src={experience.icon}
+            alt=""
+            class="w-20 rounded-md object-contain"
+          />
+          <time
+            class="text-xs font-light uppercase p-2 text-emerald-600 bg-emerald-100 rounded-full"
+          >
+            {experience.period}
+          </time>
+        </div>
+
+        <!-- Description -->
+        <MarkdownContent content={experience.description} />
+      </div>
     </div>
   </div>
 </div>
