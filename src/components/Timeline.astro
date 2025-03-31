@@ -1,0 +1,15 @@
+---
+// src/components/Timeline.astro
+import type { Experience } from "../data/experience";
+import TimelineItem from "./TimelineItem.astro";
+
+interface Props {
+  experiences: Experience[];
+}
+
+const { experiences } = Astro.props;
+---
+
+<div class="w-full">
+  {experiences.map((experience) => <TimelineItem experience={experience} />)}
+</div>
