@@ -1,34 +1,12 @@
 ---
 import Layout from "../layouts/Layout.astro";
-import ProfileHeader from "../components/ProfileHeader.astro";
-import profileImage from "../assets/me.jpg";
-import instagramIcon from "../assets/instagram-logo.svg";
-import youtubeIcon from "../assets/youtube-logo.svg";
+import Profile from "../components/Profile.astro";
 
-const socialLinks = [
-  {
-    icon: instagramIcon,
-    url: "https://instagram.com/nicholas.eager",
-    label: "Instagram",
-  },
-  {
-    icon: youtubeIcon,
-    url: "https://youtube.com/@NicholasEager",
-    label: "YouTube",
-  },
-];
-
-const bio =
-  "I like to build beautifully native mobile experiences, explore faraway places, and film every detail of my experiences 👨‍💻🏔🎥";
+import { profile } from "../data/profile";
 ---
 
 <Layout title="Nicholas Trampe">
   <main class="container mx-auto px-4 py-8">
-    <ProfileHeader
-      profileImage={profileImage}
-      name="Nicholas Trampe"
-      bio={bio}
-      socialLinks={socialLinks}
-    />
+    <Profile profile={profile} />
   </main>
 </Layout>

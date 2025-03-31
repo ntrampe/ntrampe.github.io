@@ -1,28 +1,19 @@
 ---
 // ProfileHeader.astro
-import type { ImageMetadata } from "astro";
 import { Image } from "astro:assets";
-
-interface SocialLink {
-  icon: ImageMetadata;
-  url: string;
-  label: string;
-}
+import type { Profile } from "../data/profile";
 
 interface Props {
-  profileImage: ImageMetadata;
-  name: string;
-  bio: string;
-  socialLinks: SocialLink[];
+  profile: Profile;
 }
 
-const { profileImage, name, bio, socialLinks } = Astro.props;
+const { profile } = Astro.props;
 ---
 
 <div class="flex flex-col md:flex-row items-center gap-6 max-w-xl mx-auto p-6">
   <div class="flex-shrink-0">
     <Image
-      src={profileImage}
+      src={profile.picture}
       alt="Profile photo"
       width={200}
       height={200}
@@ -31,23 +22,23 @@ const { profileImage, name, bio, socialLinks } = Astro.props;
   </div>
 
   <div class="flex flex-col gap-2 text-center md:text-left">
-    <h1 class="text-3xl font-bold text-slate-900">{name}</h1>
+    <h1 class="text-3xl font-bold text-slate-900">{profile.name}</h1>
 
     <p class="text-slate-400 font-light italic text-lg">
-      {bio}
+      {profile.description}
     </p>
 
     <div class="flex justify-center md:justify-start items-center gap-4 mt-2">
       {
-        socialLinks.map((link) => (
+        profile.social.map((link) => (
           <a
             href={link.url}
             target="_blank"
             rel="noopener noreferrer"
             class="text-gray-600 hover:text-gray-900 transition-colors"
-            aria-label={link.label}
+            aria-label={link.platform}
           >
-            <Image src={link.icon} alt={link.label} width={32} height={32} />
+            <Image src={link.icon} alt={link.platform} width={32} height={32} />
           </a>
         ))
       }
