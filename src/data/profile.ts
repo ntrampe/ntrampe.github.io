@@ -10,7 +10,7 @@ export interface Profile {
 }
 
 export const profile: Profile = {
-  name: "Nicholas Eager",
+  name: "Nicholas Trampe",
   picture: "/src/assets/me.jpg",
   description:
     "I like to build beautifully native mobile experiences, explore faraway places, and film every detail of my experiences 👨‍💻🏔🎥",
