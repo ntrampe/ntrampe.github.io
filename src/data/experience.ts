@@ -39,7 +39,7 @@ export const experiences: Experience[] = [
     period: "2011 - 2015",
     icon: "mst-logo.jpg",
     description:
-      "I received a B.S. in computer science with a 4.0/4.0 GPA in Algorithms, Data Structures, Operating Systems, Artificial Intelligence, Theory of Computer Science, Software Engineering, Databases, Object Oriented Numerical Modeling, Software Systems Design, and Evolutionary Computing. I was fortunate enough to have three internships along the way. My first was at Garmin developing software for the user interface of an integrated flight deck. My second was at Boeing working on an internal .NET application responsible for organizing business leader's schedules at an internal conference. My final was also at Boeing managing a project that involved streaming video while training mechanics in confined spaces.",
+      "I received a B.S. in computer science with a 4.0/4.0 GPA in Algorithms, Data Structures, Operating Systems, Artificial Intelligence, Theory of Computer Science, Software Engineering, Databases, Object Oriented Numerical Modeling, Software Systems Design, and Evolutionary Computing.\n\nI was fortunate enough to have three internships along the way. My first was at Garmin developing software for the user interface of an integrated flight deck. My second was at Boeing working on an internal .NET application responsible for organizing business leader's schedules at an internal conference. My final was also at Boeing managing a project that involved streaming video while training mechanics in confined spaces.",
   },
   {
     period: "2014",
