@@ -1,4 +1,5 @@
 export interface Project {
+  id: string;
   icon: string;
   title: string;
   overview: string;
@@ -9,6 +10,7 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "eager-website",
     icon: "eager.png",
     title: "nicholaseager.com",
     overview:
@@ -39,6 +41,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "comment-connect",
     icon: "comment-connect-icon.png",
     title: "Comment Connect",
     overview:
@@ -62,6 +65,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "nunci",
     icon: "nunci-icon.png",
     title: "nunci",
     overview:
@@ -88,6 +92,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "runprints",
     icon: "runprints-icon.png",
     title: "RunPrints",
     overview:
@@ -113,6 +118,7 @@ export const projects: Project[] = [
     ],
   },
   {
+    id: "two-foxes-cafe",
     icon: "two-foxes-logo.png",
     title: "Two Foxes Cafe",
     overview:
