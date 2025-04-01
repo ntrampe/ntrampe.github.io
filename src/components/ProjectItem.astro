@@ -3,6 +3,8 @@
 import type { Project } from "../data/projects";
 import Card from "./Card.astro";
 import MarkdownContent from "./MarkdownContent.astro";
+import SkillsList from "./SkillsList.astro";
+import AchievementsList from "./AchievementsList.astro";
 
 interface Props {
   project: Project;
@@ -11,16 +13,28 @@ interface Props {
 const { project } = Astro.props;
 ---
 
-<Card>
-  <div class="flex items-center gap-4 mb-4">
-    <div
-      class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600"
-    >
-      <img src={project.icon} alt="" class="w-20 rounded-md object-contain" />
+<Card class="space-y-4">
+  <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+    <div class="flex items-center gap-4">
+      <div
+        class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600"
+      >
+        <img src={project.icon} alt="" class="w-20 rounded-md object-contain" />
+      </div>
+      <h3 class="text-lg font-semibold text-slate-900">{project.title}</h3>
     </div>
-    <h3 class="text-lg font-semibold text-slate-900">{project.title}</h3>
+    <a
+      href={project.url}
+      target="_blank"
+      rel="noopener noreferrer"
+      class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 rounded-md hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
+    >
+      View Showcase
+    </a>
   </div>
   <div class="text-slate-600">
-    <MarkdownContent content={project.description} />
+    <MarkdownContent content={project.overview} />
   </div>
+  <AchievementsList achievements={project.achievements} />
+  <SkillsList skills={project.skills} />
 </Card>

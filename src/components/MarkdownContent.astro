@@ -10,4 +10,4 @@ const { content } = Astro.props;
 const htmlContent = marked(content);
 ---
 
-<div class="prose prose-slate" set:html={htmlContent} />
+<div class="prose prose-slate max-w-none" set:html={htmlContent} />
