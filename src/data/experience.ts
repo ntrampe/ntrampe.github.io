@@ -10,7 +10,7 @@ export const experiences: Experience[] = [
     period: "2023 - Present",
     icon: "yt.png",
     description:
-      "I am a currently a [YouTuber](https://www.youtube.com/NicholasEager) that specializes in making cinematic hiking, adventure, and cultural videos around the world. In addition to creative filming, editing, and social media management, I automated repetitive tasks, such as responding to comments, with Python and OpenAI's GPT API. I designed and developed a promotional [website](https://nicholaseager.com/), and performed market research for the YouTube channel's target niche, growing the channel by 44.7k subscribers in six months.",
+      "I am currently a content creator, designer, and software developer with expertise in front-end development, UI/UX design, and AI automation. As a [content creator](https://www.youtube.com/NicholasEager), I specialize in cinematic storytelling, leveraging creative filming, editing, and social media strategies to engage a global audience. I [designed and engineered a brand website](https://www.nicholaseager.com) from the ground up, focusing on user experience and performance optimization. Additionally, I [automated repetitive tasks](https://apps.apple.com/us/app/comment-connect/id6478116756), such as comment responses, using generative AI. Through strategic market research, I grew my channel by 44.7k subscribers (373%) in six months. I have also collaborated with local businesses in Nepal, Peru, and other countries to build business relationships that enhance audience engagement and brand visibility.",
     skills: [
       "Video Editing",
       "Visual Composition",
@@ -81,7 +81,7 @@ export const experiences: Experience[] = [
     period: "2011 - 2015",
     icon: "mst-logo.jpg",
     description:
-      "I received a B.S. in computer science with a 4.0/4.0 GPA in Algorithms, Data Structures, Operating Systems, Artificial Intelligence, Theory of Computer Science, Software Engineering, Databases, Object Oriented Numerical Modeling, Software Systems Design, and Evolutionary Computing.\n\nI was fortunate enough to have three internships along the way. My first was at Garmin developing software for the user interface of an integrated flight deck. My second was at Boeing working on an internal .NET application responsible for organizing business leader's schedules at an internal conference. My final was also at Boeing managing a project that involved streaming video while training mechanics in confined spaces.",
+      "I received a B.S. in computer science with a 4.0/4.0 GPA in Algorithms, Data Structures, Operating Systems, Artificial Intelligence, Theory of Computer Science, Software Engineering, Databases, Object Oriented Numerical Modeling, Software Systems Design, and Evolutionary Computing.\n\nI was fortunate enough to have three internships along the way. My first was at [Garmin](https://www.garmin.com/) developing software for the user interface of an integrated flight deck. My second was at [Boeing](https://www.boeing.com/) working on an internal .NET application responsible for organizing business leader's schedules at an internal conference. My final was also at Boeing managing a project that involved streaming video while training mechanics in confined spaces.",
     skills: [
       "Algorithms & Data Structures",
       "Operating Systems",
@@ -97,7 +97,13 @@ export const experiences: Experience[] = [
     period: "2014",
     icon: "hkust-logo.png",
     description:
-      "I studied abroad at Hong Kong University of Science and Technology.",
-    skills: [],
+      "I completed a semester abroad at [Hong Kong University of Science and Technology](https://hkust.edu.hk/), gaining valuable exposure to global technological perspectives, developed cross-cultural communication skills while collaborating with diverse international teams on technical projects. This experience enhanced adaptability and problem-solving capabilities in multicultural environments.",
+    skills: [
+      "Cross-cultural Communication",
+      "Global Networking",
+      "Adaptability",
+      "Cultural Fluency",
+      "Language Exposure",
+    ],
   },
 ];
