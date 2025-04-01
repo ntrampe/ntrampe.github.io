@@ -126,7 +126,7 @@ export const projects: Project[] = [
     ],
     skills: [
       "UI/UX Design",
-      "Web Developement",
+      "Web Development",
       "Jekyll",
       "HTML/CSS",
       "Multi-lingual i18n",
