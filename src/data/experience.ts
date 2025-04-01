@@ -40,7 +40,7 @@ export const experiences: Experience[] = [
     period: "2021 - 2022",
     icon: "computer-emoji.png",
     description:
-      "I was a freelance software engineer remotely based in Vietnam. After moving to reunite with my wife during during the pandemic, I spent most of my time developing my skills in Flutter, and UI/UX. Freelancing with Flutter has given me the opportunity to master reactive programming, build robust and scalable backend services with Firebase, and learn about app marketing, all while wearing the hat of a UI/UX designer. Check out some of my personal projects below to see more.",
+      "I was a freelance software engineer remotely based in Vietnam. After moving to reunite with my wife during during the pandemic, I spent most of my time developing my skills in Flutter, and UI/UX. Freelancing with Flutter has given me the opportunity to master reactive programming, build robust and scalable backend services with Firebase, and learn about app marketing, all while wearing the hat of a UI/UX designer. Check out some of my [personal projects](#projects) below to see more.",
     skills: [
       "Flutter",
       "UI/UX Design",
