@@ -13,7 +13,7 @@ export const profile: Profile = {
   name: "Nicholas Trampe",
   picture: "me.jpg",
   description:
-    "I like to build beautiful digital experiences, explore faraway places, and film every detail of my experiences 👨‍💻🏔🎥",
+    "I like to build beautiful digital experiences, explore faraway places, and film every detail of my adventures 👨‍💻🏔🎥",
   social: [
     {
       icon: "instagram-logo.svg",
