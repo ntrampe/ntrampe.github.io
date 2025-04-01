@@ -3,6 +3,7 @@
 import { Image } from "astro:assets";
 import type { Experience } from "../data/experience";
 import MarkdownContent from "./MarkdownContent.astro";
+import SkillsList from "./SkillsList.astro";
 
 interface Props {
   experience: Experience;
@@ -52,18 +53,7 @@ const { experience } = Astro.props;
         <div>
           <!-- Description -->
           <MarkdownContent content={experience.description} />
-
-          {
-            experience.skills.length > 0 && (
-              <div class="flex flex-wrap gap-2 mt-4 pt-4 border-t border-slate-200">
-                {experience.skills.map((skill) => (
-                  <span class="px-3 py-1 bg-slate-100 text-slate-700 rounded-full text-sm">
-                    {skill}
-                  </span>
-                ))}
-              </div>
-            )
-          }
+          <SkillsList skills={experience.skills} />
         </div>
       </div>
     </div>
