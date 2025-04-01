@@ -16,6 +16,11 @@ export const profile: Profile = {
     "I like to build beautiful digital experiences, explore faraway places, and film every detail of my adventures 👨‍💻🏔🎥",
   social: [
     {
+      icon: "linkedin-logo.svg",
+      url: "https://www.linkedin.com/in/nicholastrampe/",
+      platform: "LinkedIn",
+    },
+    {
       icon: "instagram-logo.svg",
       url: "https://instagram.com/nicholas.eager",
       platform: "Instagram",
