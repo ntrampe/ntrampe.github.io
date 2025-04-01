@@ -1,0 +1,27 @@
+---
+// src/components/ProjectCard.astro
+import type { Project } from "../data/projects";
+import MarkdownContent from "./MarkdownContent.astro";
+
+interface Props {
+  project: Project;
+}
+
+const { project } = Astro.props;
+---
+
+<div
+  class="bg-white rounded-xl shadow-sm p-6 border border-slate-200 hover:border-slate-300 transition-colors"
+>
+  <div class="flex items-center gap-4 mb-4">
+    <div
+      class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600"
+    >
+      <img src={project.icon} alt="" class="w-20 rounded-md object-contain" />
+    </div>
+    <h3 class="text-lg font-semibold text-slate-900">{project.title}</h3>
+  </div>
+  <div class="text-slate-600">
+    <MarkdownContent content={project.description} />
+  </div>
+</div>
