@@ -4,6 +4,7 @@ import { Image } from "astro:assets";
 import type { Experience } from "../data/experience";
 import MarkdownContent from "./MarkdownContent.astro";
 import SkillsList from "./SkillsList.astro";
+import Card from "./Card.astro";
 
 interface Props {
   experience: Experience;
@@ -31,7 +32,7 @@ const { experience } = Astro.props;
     <div class="absolute w-4 h-px bg-gray-300 left-[-16px] top-1/2"></div>
 
     <!-- Content card with shadow and border -->
-    <div class="bg-white rounded-lg border border-gray-300 p-6">
+    <Card>
       <div class="flex flex-col md:flex-row items-center gap-6">
         <!-- Icon and period -->
         <div
@@ -56,6 +57,6 @@ const { experience } = Astro.props;
           <SkillsList skills={experience.skills} />
         </div>
       </div>
-    </div>
+    </Card>
   </div>
 </div>

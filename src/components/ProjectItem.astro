@@ -1,6 +1,7 @@
 ---
 // src/components/ProjectCard.astro
 import type { Project } from "../data/projects";
+import Card from "./Card.astro";
 import MarkdownContent from "./MarkdownContent.astro";
 
 interface Props {
@@ -10,9 +11,7 @@ interface Props {
 const { project } = Astro.props;
 ---
 
-<div
-  class="bg-white rounded-xl shadow-sm p-6 border border-slate-200 hover:border-slate-300 transition-colors"
->
+<Card>
   <div class="flex items-center gap-4 mb-4">
     <div
       class="w-10 h-10 flex items-center justify-center rounded-full bg-slate-100 text-slate-600"
@@ -24,4 +23,4 @@ const { project } = Astro.props;
   <div class="text-slate-600">
     <MarkdownContent content={project.description} />
   </div>
-</div>
+</Card>
