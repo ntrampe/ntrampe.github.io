@@ -54,14 +54,15 @@ export const projects: Project[] = [
       "Built with Flutter and Riverpod for state management, creating a responsive and maintainable codebase with clean separation of concerns",
     ],
     skills: [
+      "AI Engineering",
       "Flutter",
-      "Riverpod State Management",
       "UX/UI Design",
       "iOS Deployment",
       "AI Integration",
       "Prompt Engineering",
       "RESTful API integration",
       "OAuth2 authentication",
+      "Riverpod State Management",
     ],
   },
   {

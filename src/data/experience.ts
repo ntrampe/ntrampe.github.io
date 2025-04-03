@@ -12,11 +12,12 @@ export const experiences: Experience[] = [
     description:
       "I am currently a content creator, designer, and software developer with expertise in front-end development, UI/UX design, and AI automation. As a [content creator](https://www.youtube.com/NicholasEager), I specialize in cinematic storytelling, leveraging creative filming, editing, and social media strategies to engage a global audience. I [designed and engineered a brand website](#eager-website) from the ground up, focusing on user experience and performance optimization. Additionally, I [automated repetitive tasks](#comment-connect), such as comment responses, using generative AI. Through strategic market research, I grew my channel by 44.7k subscribers (373%) in six months. I have also collaborated with local businesses in Nepal, Peru, and other countries to build business relationships that enhance audience engagement and brand visibility.",
     skills: [
-      "Video Editing",
-      "Visual Composition",
+      "AI Engineering",
       "Product Design",
       "Automation",
       "Web Development",
+      "Video Editing",
+      "Visual Composition",
       "Market Research",
       "Business Management",
     ],
