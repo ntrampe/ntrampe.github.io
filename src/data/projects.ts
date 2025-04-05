@@ -1,9 +1,14 @@
+export interface Link {
+  title: string;
+  url: string;
+}
+
 export interface Project {
   id: string;
   icon: string;
   title: string;
   overview: string;
-  url: string;
+  links: Link[];
   achievements: string[];
   skills: string[];
 }
@@ -15,7 +20,12 @@ export const projects: Project[] = [
     title: "nicholaseager.com",
     overview:
       "Designed and developed a modern, interactive promotional website for my YouTube channel using Astro, React, and Tailwind CSS. The site showcases a cohesive design system with elegant components while delivering optimal user experience.",
-    url: "https://nicholaseager.com/guides/how-to-hike-the-upper-mustang-trek/",
+    links: [
+      {
+        title: "Showcase",
+        url: "https://nicholaseager.com/guides/how-to-hike-the-upper-mustang-trek/",
+      },
+    ],
     achievements: [
       "Architected a cohesive design system featuring interactive components that enhance user engagement while maintaining visual consistency across the platform",
       "Engineered an innovative static comment system allowing visitors to engage without authentication barriers while effectively mitigating spam",
@@ -46,7 +56,16 @@ export const projects: Project[] = [
     title: "Comment Connect",
     overview:
       "Designed and developed a comprehensive iOS application that empowers content creators to intelligently generate contextual responses to audience comments across multiple social media platforms from a single interface.",
-    url: "https://apps.apple.com/us/app/comment-connect/id6478116756",
+    links: [
+      {
+        title: "App Store",
+        url: "https://apps.apple.com/us/app/comment-connect/id6478116756",
+      },
+      {
+        title: "Interactive Demo",
+        url: "https://commentconnect-442f6.web.app/",
+      },
+    ],
     achievements: [
       "Designed the complete user experience and established a cohesive design system from the ground up, ensuring intuitive navigation and consistent visual language throughout the application",
       "Engineered an advanced prompt system that synthesizes video metadata, creator biography, and customizable response guidelines to produce highly personalized AI-generated replies",
@@ -71,7 +90,12 @@ export const projects: Project[] = [
     title: "nunci",
     overview:
       "Engineered an innovative language learning application leveraging AI and advanced pedagogical methodologies to enhance pronunciation, listening, reading, and writing skills.",
-    url: "https://www.youtube.com/watch?v=AjvgqlVAlgw",
+    links: [
+      {
+        title: "Demo Video",
+        url: "https://www.youtube.com/watch?v=AjvgqlVAlgw",
+      },
+    ],
     achievements: [
       "Architected the core learning engine using natural language processing, spaced-repetition algorithms, and dynamic programming techniques to create personalized learning paths",
       "Implemented secure authentication and scalable database architecture utilizing Firebase services",
@@ -98,7 +122,12 @@ export const projects: Project[] = [
     title: "RunPrints",
     overview:
       "Designed and developed a cross-platform mobile application (iOS/Android) using Flutter that transforms athletic activities into personalized artwork.",
-    url: "https://apps.apple.com/US/app/id1589367390?mt=8",
+    links: [
+      {
+        title: "App Store",
+        url: "https://apps.apple.com/US/app/id1589367390?mt=8",
+      },
+    ],
     achievements: [
       "Engineered robust API integrations with Strava and Garmin platforms to securely retrieve users' GPS activity data in GPX format",
       "Implemented an interactive Google Maps interface with custom styling options allowing users to visualize and creatively annotate their routes",
@@ -124,7 +153,12 @@ export const projects: Project[] = [
     title: "Two Foxes Cafe",
     overview:
       "Designed and developed a responsive, multi-lingual website for Two Foxes Cafe, a hospitality venture I co-founded and operated with my wife during our time in Vietnam.",
-    url: "https://www.twofoxescafe.com/",
+    links: [
+      {
+        title: "Website",
+        url: "https://www.twofoxescafe.com/",
+      },
+    ],
     achievements: [
       "Created an elegant, responsive design that showcased the cafe's unique ambiance and offerings",
       "Implemented comprehensive internationalization (i18n) to serve both English and Vietnamese-speaking customers",

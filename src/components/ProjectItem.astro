@@ -23,14 +23,20 @@ const { project } = Astro.props;
       </div>
       <h3 class="text-lg font-semibold text-slate-900">{project.title}</h3>
     </div>
-    <a
-      href={project.url}
-      target="_blank"
-      rel="noopener noreferrer"
-      class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 rounded-md hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
-    >
-      View Showcase
-    </a>
+    <div class="flex gap-2">
+      {
+        project.links.map((link) => (
+          <a
+            href={link.url}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="inline-flex items-center px-4 py-2 text-sm font-medium text-white bg-emerald-600 rounded-md hover:bg-emerald-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-emerald-500"
+          >
+            {link.title}
+          </a>
+        ))
+      }
+    </div>
   </div>
   <div class="text-slate-600">
     <MarkdownContent content={project.overview} />
