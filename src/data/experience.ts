@@ -7,7 +7,21 @@ export interface Experience {
 
 export const experiences: Experience[] = [
   {
-    period: "2023 - Present",
+    period: "2025 - Present",
+    icon: "google.png",
+    description:
+      "I am currently a software engineer at Google in Boulder, Colorado, working on the Google Drive iOS application alongside various internal initiatives. This role offers the opportunity to contribute to one of the world's leading AI-powered platforms while diving deeper into scalable iOS systems at Google's scale. Working from Boulder allows me to continue exploring the mountains and combining my passion for technology with outdoor adventure.",
+    skills: [
+      "iOS Development",
+      "Swift & SwiftUI",
+      "Scalable Architecture",
+      "Google Drive",
+      "AI-Powered Systems",
+      "Cross-functional Collaboration",
+    ],
+  },
+  {
+    period: "2023 - 2025",
     icon: "yt.png",
     description:
       "I am currently a content creator, designer, and software developer with expertise in front-end development, UI/UX design, and AI automation. As a [content creator](https://www.youtube.com/NicholasEager), I specialize in cinematic storytelling, leveraging creative filming, editing, and social media strategies to engage a global audience. I [designed and engineered a brand website](#eager-website) from the ground up, focusing on user experience and performance optimization. Additionally, I [automated repetitive tasks](#comment-connect), such as comment responses, using generative AI. Through strategic market research, I grew my channel by 44.7k subscribers (373%) in six months. I have also collaborated with local businesses in Nepal, Peru, and other countries to build business relationships that enhance audience engagement and brand visibility.",

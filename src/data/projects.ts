@@ -15,6 +15,75 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "slides",
+    icon: "slides.png",
+    title: "Slides",
+    overview:
+      "Designed and built a configurable slideshow application for Immich photo libraries, intended for digital photo frames, kiosks, and display systems. Focused on architecture and security while using AI-assisted development for implementation.",
+    links: [
+      {
+        title: "GitHub",
+        url: "https://github.com/ntrampe/slides",
+      },
+      {
+        title: "Interactive Demo",
+        url: "https://ntrampe-slides.netlify.app/",
+      },
+    ],
+    achievements: [
+      "Designed a feature-first modular architecture with clear separation of concerns",
+      "Built a Backend-for-Frontend using Node.js and Express to proxy API requests and keep credentials secure",
+      "Implemented three-tier configuration (localStorage, URL parameters, environment variables) for flexible deployment",
+      "Added slideshow features including shuffle, custom transitions, Ken Burns animations, and Live Photo playback",
+      "Built filtering by albums, people, locations, and date ranges using the Immich API",
+      "Supports single-image and split-screen layouts with optional overlays for clock, weather, and metadata",
+      "Containerized with Docker for easy deployment",
+    ],
+    skills: [
+      "System Architecture",
+      "React & TypeScript",
+      "Vite",
+      "Node.js & Express",
+      "Backend-for-Frontend (BFF)",
+      "TanStack Query",
+      "API Integration",
+      "Docker",
+      "AI-Assisted Development",
+      "Immich API",
+    ],
+  },
+  {
+    id: "chatmcp",
+    icon: "chat-mcp.png",
+    title: "ChatMCP",
+    overview:
+      "Built an iOS application using Flutter that connects large language models with native iOS capabilities through the Model Context Protocol (MCP), allowing AI to interact with system services like Calendar and Photos.",
+    links: [
+      {
+        title: "App Store",
+        url: "https://apps.apple.com/us/app/chatmcp/id6745196560",
+      },
+    ],
+    achievements: [
+      "Implemented the Model Context Protocol on iOS to standardize how AI models interact with external tools and data",
+      "Built local tool integrations with iOS frameworks like EventKit and PhotoKit, giving LLMs access to calendar events and photos",
+      "Added support for connecting to external MCP servers to extend functionality beyond local resources",
+      "Designed security boundaries to safely manage interaction between AI models and system-level data",
+      "Created an extensible framework allowing developers to add or modify tools",
+    ],
+    skills: [
+      "Flutter",
+      "iOS Development",
+      "Model Context Protocol (MCP)",
+      "AI Integration",
+      "EventKit",
+      "PhotoKit",
+      "API Design",
+      "Security Architecture",
+      "Protocol Implementation",
+    ],
+  },
+  {
     id: "eager-website",
     icon: "eager.png",
     title: "nicholaseager.com",
@@ -156,7 +225,7 @@ export const projects: Project[] = [
     links: [
       {
         title: "Website",
-        url: "https://www.twofoxescafe.com/",
+        url: "https://twofoxescafe.github.io/",
       },
     ],
     achievements: [
