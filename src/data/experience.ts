@@ -10,37 +10,38 @@ export const experiences: Experience[] = [
     period: "2025 - Present",
     icon: "google.png",
     description:
-      "I am currently a software engineer at Google in Boulder, Colorado, working on the Google Drive iOS application alongside various internal initiatives. This role offers the opportunity to contribute to one of the world's leading AI-powered platforms while diving deeper into scalable iOS systems at Google's scale. Working from Boulder allows me to continue exploring the mountains and combining my passion for technology with outdoor adventure.",
+      "I am a Software Engineer (L4) at Google in Boulder, Colorado, on **Google Drive for iOS**. I led client-side development of the **Sources** feature in **AI Mode**, so users can incorporate Drive files, Gmail threads, and external data sources into AI interactions. I designed and implemented integrations across multiple data providers (Drive, Gmail, and extensible sources such as web, calendar, and chat) for flexible context aggregation. I work closely with **product and UX** to define user-facing behavior and interaction patterns for AI-powered features. I also develop core **latency instrumentation** infrastructure across Google Workspace apps—including ways to measure rendering and interaction latency—and have done low-level analysis of **iOS rendering** (run loops, render server) to improve the accuracy of performance metrics.",
     skills: [
       "iOS Development",
       "Swift & SwiftUI",
-      "Scalable Architecture",
       "Google Drive",
-      "AI-Powered Systems",
-      "Cross-functional Collaboration",
+      "AI Mode & Sources",
+      "Multi-service Integration",
+      "Performance Instrumentation",
+      "Product & UX Collaboration",
     ],
   },
   {
-    period: "2023 - 2025",
+    period: "2022 - 2025",
     icon: "yt.png",
     description:
-      "I was a content creator, designer, and software developer with expertise in front-end development, UI/UX design, and AI automation. As a [content creator](https://www.youtube.com/NicholasEager), I specialize in cinematic storytelling, leveraging creative filming, editing, and social media strategies to engage a global audience. I [designed and engineered a brand website](#eager-website) from the ground up, focusing on user experience and performance optimization. Additionally, I [automated repetitive tasks](#comment-connect), such as comment responses, using generative AI. Through strategic market research, I grew my channel by 44.7k subscribers (373%) in six months. I have also collaborated with local businesses in Nepal, Peru, and other countries to build business relationships that enhance audience engagement and brand visibility.",
+      "Alongside other roles, I was self-employed as a software engineer, product designer, and content creator. I built and shipped multiple applications and systems across **mobile and web**, designed **AI-powered tools and content pipelines** to automate workflows and improve experiences, and engineered **full-stack** work—frontends, backends, and deployment pipelines. As a [content creator](https://www.youtube.com/NicholasEager), I grew my YouTube channel to **100k+ subscribers** through technical storytelling and product-driven content, with cinematic filming and editing. I [designed and engineered a brand website](#eager-website) from the ground up and [automated repetitive tasks](#comment-connect) such as comment responses with generative AI. I have also collaborated with local businesses in Nepal, Peru, and elsewhere to strengthen audience engagement and brand visibility.",
     skills: [
+      "Full-stack Development",
       "AI Engineering",
       "Product Design",
-      "Automation",
-      "Web Development",
-      "Video Editing",
-      "Visual Composition",
-      "Market Research",
-      "Business Management",
+      "Web & Mobile",
+      "Content Pipelines",
+      "DevOps & Deployment",
+      "Technical Storytelling",
+      "Video Production",
     ],
   },
   {
     period: "2022 - 2023",
     icon: "bs.png",
     description:
-      "I was an iOS software engineer at Bending Spoons in Milan, Italy. I developed features for [AlightMotion](https://alightmotion.com/), a native motion graphics iOS application in Swift. During my time here, I refactored the application, feature by feature, to implement more scalable architectures and practices such as [Swift Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture). Additionally, I implemented the design for paywalls, and other features using SwiftUI. I introduced iOS tooling such as Tuist, and internal tools for analytics and running experiments. After my wife's immigrant visa was approved, we moved back to the United States.",
+      "I was an iOS software engineer at Bending Spoons in Milan, Italy. I developed features for [AlightMotion](https://alightmotion.com/), a **large-scale motion graphics** iOS app in Swift. I refactored legacy areas feature by feature toward more scalable architectures and practices such as [Swift Composable Architecture](https://github.com/pointfreeco/swift-composable-architecture). I implemented **SwiftUI** flows including **paywalls** and other user-facing surfaces, and integrated internal tooling for **analytics, experimentation, and feature iteration**—including Tuist for iOS project generation. After my wife's immigrant visa was approved, we moved back to the United States.",
     skills: [
       "iOS Development",
       "Swift & SwiftUI",
@@ -69,14 +70,16 @@ export const experiences: Experience[] = [
     period: "2018 - 2020",
     icon: "maps-logo.png",
     description:
-      "I was a software engineer on two Google Maps teams. I developed features for the Google Maps Navigation iOS platform team. I contributed to launching [Live View](https://blog.google/products/maps/new-sense-direction-live-view/) by designing a remote asset caching system. I designed, developed, advocated for, and mentored best practices for the architecture for a native iPad application responsible for using the Google Maps first-part SDK to show more robust traffic congestion. I helped conduct global research studies to provide a better Google Maps experience. I also developed critical COVID-19 awareness functionality.",
+      "I was a Software Engineer (L3) at Google in **Seattle**, Washington, on **Google Maps for iOS**. I shipped user-facing features in a large production codebase and contributed to the architecture of scalable mobile systems. I contributed to launching [Live View](https://blog.google/products/maps/new-sense-direction-live-view/) by designing a remote asset caching system. I designed, developed, advocated for, and mentored best practices for a native iPad app using the Google Maps first-party SDK to surface richer traffic congestion. I developed an **internal research iOS application** and contributed to **supporting backend services**. I helped run **global research studies** to improve Maps UX and product direction. I also built critical COVID-19 awareness functionality.",
     skills: [
       "iOS Development",
       "Swift & SwiftUI",
       "Google Maps SDK",
+      "Scalable Mobile Architecture",
+      "Backend Services",
       "Architecture Design",
       "Mentorship",
-      "Global UX Research Studies",
+      "Global UX Research",
     ],
   },
   {
@@ -96,7 +99,7 @@ export const experiences: Experience[] = [
     period: "2011 - 2015",
     icon: "mst-logo.jpg",
     description:
-      "I received a B.S. in computer science with a 4.0/4.0 GPA in Algorithms, Data Structures, Operating Systems, Artificial Intelligence, Theory of Computer Science, Software Engineering, Databases, Object Oriented Numerical Modeling, Software Systems Design, and Evolutionary Computing.\n\nI was fortunate enough to have three internships along the way. My first was at [Garmin](https://www.garmin.com/) developing software for the user interface of an integrated flight deck. My second was at [Boeing](https://www.boeing.com/) working on an internal .NET application responsible for organizing business leader's schedules at an internal conference. My final was also at Boeing managing a project that involved streaming video while training mechanics in confined spaces.",
+      "I received a **B.S. in Computer Science** from Missouri University of Science and Technology with a **4.0 / 4.0 major GPA** and **3.973 / 4.0 overall GPA**.\n\nWithin the major, I earned a 4.0/4.0 GPA in Algorithms, Data Structures, Operating Systems, Artificial Intelligence, Theory of Computer Science, Software Engineering, Databases, Object Oriented Numerical Modeling, Software Systems Design, and Evolutionary Computing.\n\nI was fortunate enough to have three internships along the way. My first was at [Garmin](https://www.garmin.com/) developing software for the user interface of an integrated flight deck. My second was at [Boeing](https://www.boeing.com/) working on an internal .NET application responsible for organizing business leader's schedules at an internal conference. My final was also at Boeing managing a project that involved streaming video while training mechanics in confined spaces.",
     skills: [
       "Algorithms & Data Structures",
       "Operating Systems",

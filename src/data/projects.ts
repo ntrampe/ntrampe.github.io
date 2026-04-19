@@ -15,11 +15,42 @@ export interface Project {
 
 export const projects: Project[] = [
   {
+    id: "chatmcp",
+    icon: "chat-mcp.png",
+    title: "ChatMCP",
+    overview:
+      "Designed, built, and shipped an iOS app (Flutter) that connects large language models to native system capabilities using the Model Context Protocol (MCP).",
+    links: [
+      {
+        title: "App Store",
+        url: "https://apps.apple.com/us/app/chatmcp/id6745196560",
+      },
+    ],
+    achievements: [
+      "Designed a tool execution layer so LLMs can invoke iOS frameworks and system capabilities safely and predictably",
+      "Implemented MCP on iOS to standardize how models interact with tools and data",
+      "Built a modular architecture supporting both local tools and external MCP servers",
+      "Defined security boundaries for controlled access to sensitive system data",
+      "Shipped an extensible framework for adding tools and expanding what models can do",
+    ],
+    skills: [
+      "Flutter",
+      "iOS Development",
+      "Model Context Protocol (MCP)",
+      "AI Integration",
+      "EventKit",
+      "PhotoKit",
+      "API Design",
+      "Security Architecture",
+      "Protocol Implementation",
+    ],
+  },
+  {
     id: "slides",
     icon: "slides.png",
     title: "Slides",
     overview:
-      "Designed and built a configurable slideshow application for Immich photo libraries, intended for digital photo frames, kiosks, and display systems. Focused on architecture and security while using AI-assisted development for implementation.",
+      "Configurable slideshow system for Immich photo libraries—modular app for frames and kiosks—with a secure BFF and flexible configuration across environments. Used AI-assisted development to move faster without sacrificing architecture.",
     links: [
       {
         title: "GitHub",
@@ -31,12 +62,10 @@ export const projects: Project[] = [
       },
     ],
     achievements: [
-      "Designed a feature-first modular architecture with clear separation of concerns",
-      "Built a Backend-for-Frontend using Node.js and Express to proxy API requests and keep credentials secure",
-      "Implemented three-tier configuration (localStorage, URL parameters, environment variables) for flexible deployment",
-      "Added slideshow features including shuffle, custom transitions, Ken Burns animations, and Live Photo playback",
-      "Built filtering by albums, people, locations, and date ranges using the Immich API",
-      "Supports single-image and split-screen layouts with optional overlays for clock, weather, and metadata",
+      "Designed a modular slideshow architecture for photo libraries with clear separation of concerns",
+      "Built a Backend-for-Frontend (Node.js/Express) to securely proxy API requests and protect credentials",
+      "Implemented flexible configuration (localStorage, URL parameters, environment variables) for multiple deployment setups",
+      "Added advanced display features: motion (e.g. Ken Burns, transitions, Live Photo), rich filtering (albums, people, places, dates), and multi-layout support including split-screen with optional overlays",
       "Containerized with Docker for easy deployment",
     ],
     skills: [
@@ -50,37 +79,6 @@ export const projects: Project[] = [
       "Docker",
       "AI-Assisted Development",
       "Immich API",
-    ],
-  },
-  {
-    id: "chatmcp",
-    icon: "chat-mcp.png",
-    title: "ChatMCP",
-    overview:
-      "Built an iOS application using Flutter that connects large language models with native iOS capabilities through the Model Context Protocol (MCP), allowing AI to interact with system services like Calendar and Photos.",
-    links: [
-      {
-        title: "App Store",
-        url: "https://apps.apple.com/us/app/chatmcp/id6745196560",
-      },
-    ],
-    achievements: [
-      "Implemented the Model Context Protocol on iOS to standardize how AI models interact with external tools and data",
-      "Built local tool integrations with iOS frameworks like EventKit and PhotoKit, giving LLMs access to calendar events and photos",
-      "Added support for connecting to external MCP servers to extend functionality beyond local resources",
-      "Designed security boundaries to safely manage interaction between AI models and system-level data",
-      "Created an extensible framework allowing developers to add or modify tools",
-    ],
-    skills: [
-      "Flutter",
-      "iOS Development",
-      "Model Context Protocol (MCP)",
-      "AI Integration",
-      "EventKit",
-      "PhotoKit",
-      "API Design",
-      "Security Architecture",
-      "Protocol Implementation",
     ],
   },
   {
